@@ -14,11 +14,11 @@ MonoBehaviour:
   id: minecraftParody
   title: Minecraft Parody
   author: Limeboy
-  description: 'Choose the correct user who should sing the displayed lytics to solve
+  description: 'Choose the correct user who should sing the displayed lyrics to solve
     the module
 
 
-    TP support is avaliable'
+    TP support is now avaliable'
   version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 5ecfb305d3853fe4f93d48e28b71e3c3, type: 3}
