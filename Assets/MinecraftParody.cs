@@ -210,7 +210,7 @@ public class MinecraftParody : MonoBehaviour
         "Is just really cool",
     };
 
-    string[] RunningToNeverLyrics = new string[32]
+    string[] RunningToNeverLyrics = new string[28]
     {
         "Triumph in our dreams",
         "We want it all",
@@ -240,10 +240,6 @@ public class MinecraftParody : MonoBehaviour
         "Chasing stardust",
         "We claw and push our way",
         "To the top",
-        "Perfect intentions",
-        "But will we ever know",
-        "How to stop?",
-        "Running running",
     };
 
     string[] MineDiamondsLyrics = new string[29]
