@@ -690,7 +690,7 @@ public class MinecraftParody : MonoBehaviour
             if (answer[i] == currentchosenuser[i])
                 correct = correct && true;
             else correct = correct && false;
-            Debug.LogFormat("[Mineceaft Parody #{0}] Submitted user {1}: {2}. Correct answer: {3}", _moduleId, i, Users[currentchosenuser[i]], Users[answer[i]]);
+            Debug.LogFormat("[Mineceaft Parody #{0}] Submitted user {1}: {2}. Correct answer: {3}", _moduleId, i+1, Users[currentchosenuser[i]], Users[answer[i]]);
         }
         if (correct == true)
         {
