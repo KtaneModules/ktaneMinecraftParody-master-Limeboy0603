@@ -494,7 +494,7 @@ public class MinecraftParody : MonoBehaviour
         "Kavinkul",
         "Blanana",
         "River",
-        "Lord Kabewm",
+        "LordKabewm",
         "Legend",
         "RockDood",
         "Kat",
@@ -708,7 +708,7 @@ public class MinecraftParody : MonoBehaviour
     }
 
 #pragma warning disable 414
-    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, Lord Kabewm, Legend, RockDood, Kat, Timwi, Red, Emik. Names must have their corresponding letters capitalized.";
+    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, LordKabewm, Legend, RockDood, Kat, Timwi, Red, Emik. Names must have their corresponding letters capitalized.";
 #pragma warning restore 414
     int tpreturnvalue(int i, int a)
     {
