@@ -708,8 +708,14 @@ public class MinecraftParody : MonoBehaviour
     }
 
 #pragma warning disable 414
-    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, Lord Kabewm, Legend, RockDood, Kat, Timwi, Red, Emik. Names must have their first letter capitalized.";
+    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, Lord Kabewm, Legend, RockDood, Kat, Timwi, Red, Emik. Names must have their corresponding letters capitalized.";
 #pragma warning restore 414
+    int tpreturnvalue(int i, int a)
+    {
+        if (a < currentchosenuser[i])
+            return a + 20;
+        else return a;
+    }
 
     IEnumerator ProcessTwitchCommand(string command)
     {
@@ -726,7 +732,7 @@ public class MinecraftParody : MonoBehaviour
             {
                 if (!Users.Contains(parameters[i]))
                     yield break;
-                for (int j = 0; j < Array.IndexOf(Users, parameters[i]); j++)
+                for (int j = currentchosenuser[i]; j < tpreturnvalue(i, Array.IndexOf(Users, parameters[i])); j++)
                 {
                     yield return null;
                     Button[i].OnInteract();
