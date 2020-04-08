@@ -500,7 +500,8 @@ public class MinecraftParody : MonoBehaviour
         "Kat",
         "Timwi",
         "Red",
-        "Emik"
+        "Emik",
+        "Qkrisi"
     };
 
     int chosensong;
@@ -708,7 +709,7 @@ public class MinecraftParody : MonoBehaviour
     }
 
 #pragma warning disable 414
-    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, LordKabewm, Legend, RockDood, Kat, Timwi, Red, Emik. Names must have their corresponding letters capitalized.";
+    private string TwitchHelpMessage = "!{0} submit [submit the singers]. !{0} (names) (names) (names) (names) [input the names].Names include: Limeboy, Sam, BananaLord, Strike, Jack, Weird, Finder, CrunchyBot, Cooldoom, Pruz, Kavinkul, Blanana, River, LordKabewm, Legend, RockDood, Kat, Timwi, Red, Emik, Qkrisi. Names must have their corresponding letters capitalized.";
 #pragma warning restore 414
     int tpreturnvalue(int i, int a)
     {
@@ -724,6 +725,8 @@ public class MinecraftParody : MonoBehaviour
         else if (command.Equals("cv"))
             yield return null;
         else if (command.Equals("claim"))
+            yield return null;
+        else if (command.Equals("help"))
             yield return null;
         else
         {
