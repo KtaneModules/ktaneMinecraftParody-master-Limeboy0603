@@ -728,6 +728,16 @@ public class MinecraftParody : MonoBehaviour
             yield return null;
         else if (command.Equals("help"))
             yield return null;
+        else if (command.Equals("unclaim"))
+            yield return null;
+        else if (command.Equals("unview"))
+            yield return null;
+        else if (command.Equals("player"))
+            yield return null;
+        else if (command.Equals("show"))
+            yield return null;
+        else if (command.Equals("unc"))
+            yield return null;
         else
         {
             string[] parameters = command.Split(' ');

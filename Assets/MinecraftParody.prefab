@@ -726,7 +726,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726857127690126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.46, z: 0}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1.1, y: 0.1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 4738666145022134}
@@ -2117,6 +2117,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 870c6e242890a7f4b9a4736d3a0ed2cb, type: 3}
   - {fileID: 2800000, guid: 8f446804acad13043aaf670e3d4a9762, type: 3}
   - {fileID: 2800000, guid: 6fbbc545d4d054447a933832e1fbc135, type: 3}
+  - {fileID: 2800000, guid: 328f456460314184ba6123217899ace6, type: 3}
   SongBG:
   - {fileID: 2100000, guid: 2af46e6946124a342bb361366f3a4b89, type: 2}
   - {fileID: 2100000, guid: a97871557b9824a4ea7e56754a8466cc, type: 2}
