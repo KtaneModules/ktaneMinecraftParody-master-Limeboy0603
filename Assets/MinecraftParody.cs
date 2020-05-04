@@ -8,6 +8,7 @@ using rnd = UnityEngine.Random;
 
 public class MinecraftParody : MonoBehaviour
 {
+    public KMAudio Audio;
     public KMSelectable[] Button;
     public KMSelectable submit;
     public TextMesh[] Lyrics_Textbox;
@@ -680,11 +681,13 @@ public class MinecraftParody : MonoBehaviour
         if (currentchosenuser[i] >= Users.Length)
             currentchosenuser[i] = 0;
         UsersSelectionBox[i].material.mainTexture = UsersPFP[currentchosenuser[i]];
+        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, Button[i].transform);
     }
 
 
     void checkans()
     {
+        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, submit.transform);
         bool correct = true;
         for (int i = 0; i < 4; i++)
         {
