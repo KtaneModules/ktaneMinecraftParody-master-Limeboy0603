@@ -596,7 +596,7 @@ public class MinecraftParody : MonoBehaviour
                 break;
             case 6://running to never
                 Debug.LogFormat("[Minecraft Parody #{0}] Chosen song: Running to Never", _moduleId);
-                n = rnd.Range(0, 29);
+                n = rnd.Range(0, 23);
                 for (int i = 0; i < 4; i++)
                 {
                     Lyrics_Textbox[i].text = RunningToNeverLyrics[i + n];
@@ -659,7 +659,7 @@ public class MinecraftParody : MonoBehaviour
                 break;
             case 13://turn it up
                 Debug.LogFormat("[Minecraft Parody #{0}] Chosen song: Turn It Up", _moduleId);
-                n = rnd.Range(0, 20);
+                n = rnd.Range(0, 21);
                 for (int i = 0; i < 4; i++)
                 {
                     Lyrics_Textbox[i].text = TurnItUpLyrics[i + n];
@@ -670,7 +670,7 @@ public class MinecraftParody : MonoBehaviour
         componentbg.material = SongBG[chosensong];
         for (int i = 0; i < 4; i++)
         {
-            Debug.LogFormat("[Mineceaft Parody #{0}] Lyric {1}: {2}", _moduleId, i + 1, Lyrics_Textbox[i].text);
+            Debug.LogFormat("[Minecraft Parody #{0}] Lyric {1}: {2}", _moduleId, i + 1, Lyrics_Textbox[i].text);
             UsersSelectionBox[i].material.mainTexture = UsersPFP[0];
         }
     }
@@ -694,19 +694,19 @@ public class MinecraftParody : MonoBehaviour
             if (answer[i] == currentchosenuser[i])
                 correct = correct && true;
             else correct = correct && false;
-            Debug.LogFormat("[Mineceaft Parody #{0}] Submitted user {1}: {2}. Correct answer: {3}", _moduleId, i+1, Users[currentchosenuser[i]], Users[answer[i]]);
+            Debug.LogFormat("[Minecraft Parody #{0}] Submitted user {1}: {2}. Correct answer: {3}", _moduleId, i+1, Users[currentchosenuser[i]], Users[answer[i]]);
         }
         if (correct == true)
         {
             GetComponent<KMBombModule>().HandlePass();
-            Debug.LogFormat("[Mineceaft Parody #{0}] Submission correct. You have defeated the Bomb-brine", _moduleId);
+            Debug.LogFormat("[Minecraft Parody #{0}] Submission correct. You have defeated the Bomb-brine", _moduleId);
             for (int i = 0; i < 4; i++)
                 Lyrics_Textbox[i].text = "UR A MINECRAFT PROFESSIONAL";
         }
         else
         {
             GetComponent<KMBombModule>().HandleStrike();
-            Debug.LogFormat("[Mineceaft Parody #{0}] Submission incorrect. AWWWWWWWWWWWWW MAN", _moduleId);
+            Debug.LogFormat("[Minecraft Parody #{0}] Submission incorrect. AWWWWWWWWWWWWW MAN", _moduleId);
             init();
         }
     }
