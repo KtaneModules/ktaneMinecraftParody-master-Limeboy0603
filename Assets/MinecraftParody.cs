@@ -744,17 +744,21 @@ public class MinecraftParody : MonoBehaviour
         else
         {
             string[] parameters = command.Split(' ');
-            for (int i = 0; i < 4; i++)
+            if (parameters.Length == 4)
             {
-                if (!Users.Contains(parameters[i]))
-                    yield break;
-                for (int j = currentchosenuser[i]; j < tpreturnvalue(i, Array.IndexOf(Users, parameters[i])); j++)
+                for (int i = 0; i < 4; i++)
                 {
-                    yield return null;
-                    Button[i].OnInteract();
-                    yield return new WaitForSeconds(0.05f);
+                    if (!Users.Contains(parameters[i]))
+                        yield break;
+                    for (int j = currentchosenuser[i]; j < tpreturnvalue(i, Array.IndexOf(Users, parameters[i])); j++)
+                    {
+                        yield return null;
+                        Button[i].OnInteract();
+                        yield return new WaitForSeconds(0.05f);
+                    }
                 }
             }
+            else yield return "sendtochaterror Please enter all 4 users at the same time.";
         }
         yield return null;
     }
